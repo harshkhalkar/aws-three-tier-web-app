@@ -2,7 +2,7 @@
 
 ## Overview
 
-[](./Multi Tier Architecture diagram (1).png)
+[](screenshots/Multi Tier Architecture diagram (1).png)
 In this architecture, a public-facing Application Load Balancer forwards client traffic to our web tier EC2 instances. The web tier is running Nginx webservers that are configured to serve a simple HTML website and redirects our .php calls to the application tier’s internal facing load balancer. The internal facing load balancer then forwards that traffic to the application tier, which is written in PHP.
 
 ## VPC and Subnet Design
