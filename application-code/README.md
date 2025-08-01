@@ -1,4 +1,4 @@
-# [./nginx.conf](./nginx.conf)
+# [nginx.conf](./nginx.conf)
 ## location / – React Frontend
 Serves static files from the React build folder. If a file isn't found, it falls back to index.html. This is essential for single-page applications (SPAs) like React, where routing is handled client-side.
 
