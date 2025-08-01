@@ -4,7 +4,7 @@ Serves static files from the React build folder. If a file isn't found, it falls
 
 ## location ~ \.php$ – PHP App Behind Another NGINX
 Handles requests for .php files by forwarding them to another internal NGINX server (which runs PHP-FPM).
-You should replace APP_TIER_NGINX_IP_OR_PRIVATE_DNS with your actual private IP or hostname of the app server in your App Tier.
+You should replace APP_TIER_NGINX_IP_OR_PRIVATE_DNS with your actual private IP or DNS name of Internal ALB or hostname of the app server in your App Tier.
 
 ## location /api/ – Proxies API to Internal ALB
 Captures any request that begins with /api/ and proxies it to the internal load balancer (ALB) in the App Tier.
